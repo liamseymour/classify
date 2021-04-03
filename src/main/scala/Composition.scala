@@ -6,7 +6,7 @@ class Composition(
 	val composer: Composer, /* To derive composer information. */
 	var form: String, /* Symphony, Piano Concerto, ...  */
 	var opus: String, /* An opus identifier e.g. Op BVW, K ... */
-	var opus_number: Int, /* Op 62, BVW 32 ... */
+	var opus_number: Int, /* Op 62, BVW 32 ... -1 indicates no associated opus number. */
 	var number: Int, /* Number accompanying the name, e.g Symphony No. 5, 
 					   Brandenburg Concerto No. 2 ... -1 Indicates no number. */
 	var movement_names: Array[String] /* Names for individual movements, e.g. 
