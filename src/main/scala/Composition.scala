@@ -25,7 +25,7 @@ class Composition(
 	
 	protected def opusString: String = 
 		if (opus_number != -1)
-			s", $opus. $opus_number"
+			s", $opus $opus_number"
 		else
 			""
 	

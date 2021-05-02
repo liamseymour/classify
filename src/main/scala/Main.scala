@@ -65,7 +65,7 @@ object Main extends App {
 				val composer = if (composer_opt == null) fm.composer else fm.getComposer(composer_opt)
 				val form = getOption("-f", args)
 				val opus_opt = getOption("-o", args)
-				val opus = if (opus_opt == null) "Op" else opus_opt
+				val opus = if (opus_opt == null) "Op." else opus_opt
 				val opus_number_opt = getOption("-O", args)
 				val opus_number = if (opus_number_opt == null) -1 else opus_number_opt.toInt
 				val number_opt = getOption("-n", args)
